@@ -19,22 +19,9 @@ export const channels: Array<Channel> = [
     // rights-restricted sport, which would hide every World Cup match.
     streamUrl: "https://s6.hopslan.com/ardX/tracks-v1a1/mono.m3u8",
   },
-  {
-    id: "yle-tv1",
-    name: "Yle TV1",
-    description: "Finnish rights holder — official feed, server-local geo",
-    logo: "https://i.imgur.com/6yXZwUL.png",
-    streamUrl:
-      "https://yletvworld.akamaized.net/hls/live/622540/yletv1w/index.m3u8",
-  },
-  {
-    id: "yle-tv2",
-    name: "Yle TV2",
-    description: "Finnish rights holder — official feed, server-local geo",
-    logo: "https://i.imgur.com/4xkc6PL.png",
-    streamUrl:
-      "https://yletvworld.akamaized.net/hls/live/622541/yletv2w/index.m3u8",
-  },
+  // Note: Yle's "world" feeds and ARD's international feed replace
+  // rights-restricted programming (i.e. live sport) with a blackout slate
+  // server-side, so they are useless here despite being official streams.
   {
     id: "dr1",
     name: "DR1",
